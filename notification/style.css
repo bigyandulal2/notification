@@ -1,0 +1,177 @@
+.img {
+  height: 100%;
+  width: 100%;
+}
+
+.rizky {
+  width: 3rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  font-size: 1.4rem;
+  background-color: hsl(211, 68%, 94%);
+}
+.container_box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsl(0, 0%, 100%);
+  padding: 3rem;
+  border-radius: 1rem;
+  width: 52vw;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+  padding-bottom: 2rem;
+}
+.header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(219, 85%, 26%);
+}
+.header span {
+  font-size: 1.6rem;
+  background-color: hsl(219, 85%, 26%);
+  padding: 0 1rem;
+  border-radius: 0.4rem;
+  color: hsl(0, 0%, 100%);
+}
+.header p {
+  font-size: 1.4rem;
+  color: hsl(219, 12%, 42%);
+  flex: 1;
+  text-align: end;
+}
+.header p:hover {
+  cursor: pointer;
+}
+
+.notification {
+  padding: 1rem 0;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 2rem;
+  flex-direction: column;
+  gap: 1rem;
+}
+.notification_message {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 2rem;
+  width: 100%;
+  padding: 1.2rem;
+}
+.notification_message_imgbox {
+  height: 3rem;
+  width: 3rem;
+  margin-left: 0rem;
+}
+.notification_message_name:hover {
+  cursor: pointer;
+  color: hsl(219, 85%, 26%);
+}
+.notification_message_review {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 2rem;
+  border-radius: 5px;
+  border: 1px solid hsl(205, 33%, 90%);
+  color: hsl(219, 14%, 63%);
+}
+.notification_message_review:hover {
+  cursor: pointer;
+  background-color: hsl(211, 68%, 94%);
+}
+.notification_message_content {
+  flex: 1;
+  position: relative;
+}
+.notification_message_react {
+  color: hsl(219, 12%, 42%);
+}
+.notification_message_tournament {
+  margin: 0 0.4rem;
+  color: hsl(219, 12%, 42%);
+}
+.notification_message_tournament:hover {
+  color: hsl(219, 85%, 26%);
+  cursor: pointer;
+}
+.notification_message_time {
+  color: hsl(219, 14%, 63%);
+  width: 100%;
+}
+
+.imgbox:hover {
+  cursor: pointer;
+}
+
+.one {
+  background-color: hsl(211, 68%, 94%);
+}
+
+.chess_img {
+  position: absolute;
+  right: -2%;
+  top: 0%;
+  width: 8%;
+}
+
+.dot-box {
+  background-color: hsl(1, 90%, 64%);
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 48em) {
+  html {
+    font-size: 9px;
+  }
+  .container_box {
+    padding: 2rem;
+    width: 80vw;
+  }
+  .chess_img {
+    right: -11px;
+    margin-left: 2px;
+  }
+}
+@media screen and (max-width: 25em) {
+  html {
+    font-size: 8px;
+  }
+  .container_box {
+    height: 100vh;
+    padding: 2rem;
+    width: 100vw;
+  }
+  .notification_message_review {
+    color: hsl(219, 14%, 48%);
+  }
+  .one {
+    background-color: hsl(210, 60%, 98%);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,180 @@
+@import "mixins";
+@import "reuse";
+// ### Primary
+$Red: hsl(1, 90%, 64%);
+$Blue: hsl(219, 85%, 26%);
+
+// ### Neutral
+
+$White: hsl(0, 0%, 100%);
+$Very-light-grayish-blue: hsl(210, 60%, 98%);
+$Light-grayish-blue-1: hsl(211, 68%, 94%);
+$Light-grayish-blue-2: hsl(205, 33%, 90%);
+$Grayish-blue: hsl(219, 14%, 63%);
+$Dark-grayish-blue: hsl(219, 12%, 42%);
+$Very-dark-blue: hsl(224, 21%, 14%);
+
+// variables
+
+//
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  font-size: 1.4rem;
+  background-color: $Light-grayish-blue-1;
+  &_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $White;
+    padding: 3rem;
+    border-radius: 1rem;
+    width: 52vw;
+  }
+}
+.header {
+  @include flex(start, center, 1rem);
+  padding-bottom: 2rem;
+  & h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: $Blue;
+  }
+  & span {
+    font-size: 1.6rem;
+    background-color: $Blue;
+    padding: 0 1rem;
+    border-radius: 0.4rem;
+    color: $White;
+  }
+  & p {
+    font-size: 1.4rem;
+    color: $Dark-grayish-blue;
+    flex: 1;
+    text-align: end;
+  }
+  & p:hover {
+    cursor: pointer;
+  }
+}
+// notification starts
+.notification {
+  padding: 1rem 0;
+
+  @include flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  &_message {
+    @include flex;
+
+    width: 100%;
+    padding: 1.2rem;
+    &_imgbox {
+      height: 3rem;
+      width: 3rem;
+      margin-left: 0rem;
+    }
+    &_name:hover {
+      cursor: pointer;
+      color: $Blue;
+    }
+    &_review {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 2rem;
+      border-radius: 5px;
+      border: 1px solid $Light-grayish-blue-2;
+      color: $Grayish-blue;
+    }
+    &_review:hover {
+      cursor: pointer;
+      background-color: $Light-grayish-blue-1;
+    }
+    &_content {
+      flex: 1;
+      position: relative;
+    }
+    &_react {
+      color: $Dark-grayish-blue;
+    }
+
+    &_tournament {
+      margin: 0 0.4rem;
+      color: $Dark-grayish-blue;
+    }
+    &_tournament:hover {
+      color: $Blue;
+      cursor: pointer;
+    }
+    &_time {
+      color: $Grayish-blue;
+      width: 100%;
+    }
+  }
+}
+.imgbox:hover {
+  cursor: pointer;
+}
+.one {
+  // this class is used in message that are not seen yet
+  background-color: $Light-grayish-blue-1;
+}
+
+.chess_img {
+  position: absolute;
+  right: -2%;
+  top: 0%;
+  width: 8%;
+}
+.dot-box {
+  background-color: $Red;
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  border-radius: 5px;
+}
+// media queries
+
+@media screen and (max-width: 48em) {
+  html {
+    font-size: 9px;
+  }
+  .container_box {
+    padding: 2rem;
+    width: 80vw;
+  }
+  .chess_img {
+    right: -11px;
+    margin-left: 2px;
+  }
+}
+
+@media screen and (max-width: 25em) {
+  html {
+    font-size: 8px;
+  }
+
+  .container_box {
+    height: 100vh;
+    padding: 2rem;
+    width: 100vw;
+  }
+  .notification_message_review {
+    color: hsl(219, 14%, 48%);
+  }
+  .one {
+    background-color: $Very-light-grayish-blue;
+  }
+}

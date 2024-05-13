@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Notifications page</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Notifications 3
+
+  Mark all as read
+
+  Mark Webber reacted to your recent post My first tournament today!
+  1m ago
+
+  Angela Gray followed you
+  5m ago
+
+  Jacob Thompson has joined your group Chess Club
+  1 day ago
+
+  Rizky Hasanuddin sent you a private message
+  5 days ago
+  Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+  I'm already having lots of fun and improving my game.
+
+  Kimberly Smith commented on your picture
+  1 week ago
+
+  Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
+  2 weeks ago
+
+  Anna Kim left the group Chess Club
+  2 weeks ago
+   -->
+
+    <div class="container">
+      <!-- top component starts -->
+      <div class="container_box">
+        <!-- section header of container-box -->
+        <div class="header">
+          <h2>Notifications</h2>
+          <span>3</span>
+          <p>Mark all as read</p>
+        </div>
+        <!-- section notification starts -->
+        <div class="notification">
+          <div class="notification_message one">
+            <p class="notification_message_imgbox">
+              <img
+                src="./assets/images/avatar-mark-webber.webp"
+                alt="mark"
+                class="img"
+              />
+            </p>
+            <div class="notification_message_content">
+              <strong class="notification_message_name">Mark Webber </strong>
+              <span class="notification_message_react"
+                >reacted to your recent post</span
+              >
+              <strong class="notification_message_tournament">
+                My first tournament today!</strong
+              >
+              <span class="dot-box"></span>
+              <p class="notification_message_time">1m ago</p>
+            </div>
+          </div>
+          <div class="notification_message one">
+            <p class="notification_message_imgbox">
+              <img
+                src="./assets/images/avatar-angela-gray.webp"
+                alt="mark"
+                class="img"
+              />
+            </p>
+            <div class="notification_message_content">
+              <strong class="notification_message_name">Angela Gray </strong>
+              <strong class="notification_message_tournament">
+                followed you</strong
+              >
+              <span class="dot-box"></span>
+              <p class="notification_message_time">5m ago</p>
+            </div>
+          </div>
+          <div class="notification_message one">
+            <p class="notification_message_imgbox">
+              <img
+                src="./assets/images/avatar-mark-webber.webp"
+                alt="mark"
+                class="img"
+              />
+            </p>
+            <div class="notification_message_content">
+              <strong class="notification_message_name">Mark Webber </strong>
+              <span class="notification_message_react"
+                >reacted to your recent post</span
+              >
+              <strong class="notification_message_tournament">
+                My first tournament today!</strong
+              >
+              <span class="dot-box"></span>
+              <p class="notification_message_time">1m ago</p>
+            </div>
+          </div>
+          <!-- next field starts -->
+          <div class="notification_message">
+            <p class="notification_message_imgbox" id="rizky">
+              <img
+                src="./assets/images/avatar-rizky-hasanuddin.webp"
+                alt="rizky"
+                class="rizky"
+              />
+            </p>
+            <div class="notification_message_content_rizky">
+              <strong class="notification_message_name">
+                Rizky Hasanuddin
+              </strong>
+              <span class="notification_message_react"
+                >sent you a private message</span
+              >
+              <p class="notification_message_time">5 days ago</p>
+              <span class="notification_message_review">
+                Hello, thanks for setting up the Chess Club. I've been a member
+                for a few weeks now and I'm already having lots of fun and
+                improving my game.
+              </span>
+            </div>
+          </div>
+          <div class="notification_message">
+            <p class="notification_message_imgbox">
+              <img
+                src="./assets/images/avatar-kimberly-smith.webp"
+                alt="mark"
+                class="img"
+              />
+            </p>
+            <div class="notification_message_content">
+              <strong class="notification_message_name">Kimberly Smith </strong>
+              <span class="notification_message_react"
+                >commented on your picture</span
+              >
+              <p class="notification_message_time">1 week ago</p>
+              <span class="imgbox">
+                <img src="./assets/images/image-chess.webp" class="chess_img" />
+              </span>
+            </div>
+          </div>
+          <div class="notification_message">
+            <p class="notification_message_imgbox">
+              <img
+                src="./assets/images/avatar-nathan-peterson.webp"
+                alt="mark"
+                class="img"
+              />
+            </p>
+            <div class="notification_message_content">
+              <strong class="notification_message_name">
+                Nathan Peterson
+              </strong>
+              <span class="notification_message_react"
+                >reacted to your recent post
+              </span>
+              <strong class="notification_message_tournament">
+                5 end-game strategies to increase your win rate</strong
+              >
+              <p class="notification_message_time">2 weeks ago</p>
+            </div>
+          </div>
+          <div class="notification_message">
+            <p class="notification_message_imgbox">
+              <img
+                src="./assets/images/avatar-anna-kim.webp"
+                alt="mark"
+                class="img"
+              />
+            </p>
+            <div class="notification_message_content">
+              <strong class="notification_message_name"> Anna Kim </strong>
+              <span class="notification_message_react">left the group</span>
+              <strong class="notification_message_tournament">
+                Chess Club</strong
+              >
+              <p class="notification_message_time">2 weeks ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js" defer></script>
+  </body>
+</html>
